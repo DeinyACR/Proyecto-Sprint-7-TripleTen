@@ -46,7 +46,7 @@ if pie_toggle:
 
 st.write(' ')
 st.markdown('**Bubble Chart**')
-bubble_box = st.checkbox('Relación entre precio y dias de publicación')
+bubble_box = st.checkbox('Relación entre precio y días de publicación')
 if bubble_box:
     fig = px.scatter(car_data, x="days_listed", y="price",
                      size="price", color="type",
